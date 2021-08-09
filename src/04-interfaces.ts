@@ -9,14 +9,14 @@
  *  - [interface vs type](https://pawelgrzybek.com/typescript-interface-vs-type/)
  */
 
-interface PluginConfig {
+interface IPluginConfig {
     readonly selector: string;
     perPage: number;
     startUndex?: number;
     draggable: boolean;
 }
 
-const config: PluginConfig = {
+const config: IPluginConfig = {
     selector: "#plugin-1",
     perPage: 2,
     /* startUndex: 0, */
@@ -25,11 +25,11 @@ const config: PluginConfig = {
 }
 /* config.selector = 'asdfasd' */
 
-interface Employees {
+interface IEmployees {
     [key: string]: number;
 }
 
-const employees: Employees = {
+const employees: IEmployees = {
     mango: 5,
     kiwi: 30,
     apple: 20,
